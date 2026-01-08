@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #007bff; 
+    --primary-color: #007bff;
     --primary-color-dark: #0056b3;
     --secondary-color: #f0f0f0;
-    --text-color: #333; 
-    --background-color: #ffffff; 
+    --text-color: #333;
+    --background-color: #ffffff;
     --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    
+
     --font-family: 'Poppins', sans-serif;
 }
 
@@ -320,7 +320,7 @@ img {
     margin-left: 0.25rem;
 }
 
-/*RESUME*/
+/*RESUME*
 #resume {
     background-color: var(--secondary-color);
 }
@@ -330,19 +330,20 @@ img {
     margin: 0 auto;
     box-shadow: var(--card-shadow);
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .resume-iframe {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     max-height: 800px;
     border: none;
 }
+/
 
 /*CONTACT*/
 #contact {
-    
+    background-color: var(--secondary-color);
 }
 
 .contact__text {
@@ -400,7 +401,7 @@ img {
         background-color: #fff;
         padding-top: 2rem;
         transition: 0.3s;
-        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     }
 
 
