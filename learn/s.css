@@ -1,0 +1,291 @@
+/* =========================
+   GLOBAL / RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+h1 {
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #34495e;
+}
+
+h3 {
+    color: #555;
+}
+
+/* =========================
+   TEXT & PARAGRAPHS
+========================= */
+p {
+    margin-bottom: 10px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+code {
+    background-color: #eee;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005999;
+}
+
+/* =========================
+   IMAGES / MEDIA
+========================= */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+audio,
+video {
+    display: block;
+    margin: 15px 0;
+}
+
+/* =========================
+   LISTS
+========================= */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+li {
+    padding: 4px 0;
+}
+
+/* =========================
+   TABLE
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* =========================
+   FORM
+========================= */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0077cc;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005999;
+}
+
+input[type="reset"] {
+    background-color: #aaa;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================
+   SEMANTIC SECTIONS
+========================= */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #0077cc;
+}
+
+article {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    background-color: #eef;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* =========================
+   OTHER ELEMENTS
+========================= */
+blockquote {
+    border-left: 5px solid #0077cc;
+    padding-left: 10px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+pre {
+    background-color: #111;
+    color: #0f0;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+details {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   PROGRESS & METER
+========================= */
+progress,
+meter {
+    width: 100%;
+    height: 20px;
+}
+
+/* =========================
+   RESPONSIVE (BASIC)
+========================= */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

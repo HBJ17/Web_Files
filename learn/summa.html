@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="All HTML elements demo page">
+    <meta name="keywords" content="HTML, demo, tags">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML All Elements Demo</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+
+    <!-- HEADINGS -->
+    <h1>Main Heading (h1)</h1>
+    <h2>Sub Heading (h2)</h2>
+    <h3>Section Heading (h3)</h3>
+    <h4>h4 Heading</h4>
+    <h5>h5 Heading</h5>
+    <h6>h6 Heading</h6>
+
+    <hr>
+
+    <!-- TEXT FORMATTING -->
+    <p>This is a <b>bold</b>, <strong>strong</strong>, <i>italic</i>, <em>emphasized</em> text.</p>
+    <p>This is <u>underlined</u> and <mark>highlighted</mark> text.</p>
+    <p>This is <small>small text</small> and this is <del>deleted</del> text.</p>
+    <p>H<sub>2</sub>O and 10<sup>2</sup></p>
+
+    <hr>
+
+    <!-- LINKS -->
+    <a href="https://www.google.com" target="_blank">Visit Google</a><br>
+    <a href="#form">Go to Form Section</a>
+
+    <hr>
+
+    <!-- IMAGES -->
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+    <br>
+
+    <!-- AUDIO -->
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- VIDEO -->
+    <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+    </video>
+
+    <hr>
+
+    <!-- LISTS -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Database</li>
+    </ol>
+
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Structure of web</dd>
+        <dt>CSS</dt>
+        <dd>Styling of web</dd>
+    </dl>
+
+    <hr>
+
+    <!-- TABLE -->
+    <h3>Table</h3>
+    <table border="1">
+        <caption>Student Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arun</td>
+                <td>CSE</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>ECE</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- FORM -->
+    <h3 id="form">Form Elements</h3>
+    <form>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter name"><br><br>
+
+        <label>Email:</label>
+        <input type="email"><br><br>
+
+        <label>Password:</label>
+        <input type="password"><br><br>
+
+        <label>Age:</label>
+        <input type="number"><br><br>
+
+        <label>DOB:</label>
+        <input type="date"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JS
+        <br><br>
+
+        <label>Country:</label>
+        <select>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+        </select>
+        <br><br>
+
+        <label>Message:</label><br>
+        <textarea rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <hr>
+
+    <!-- SEMANTIC TAGS -->
+    <header>
+        <p>This is header section</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h3>Section</h3>
+        <p>This is a section</p>
+    </section>
+
+    <article>
+        <h3>Article</h3>
+        <p>This is an article</p>
+    </article>
+
+    <aside>
+        <p>This is aside content</p>
+    </aside>
+
+    <footer>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+    <hr>
+
+    <!-- OTHER TAGS -->
+    <blockquote>
+        Learning HTML is the first step to web development.
+    </blockquote>
+
+    <pre>
+This is preformatted text
+    spacing is preserved
+    </pre>
+
+    <code>
+        printf("Hello World");
+    </code>
+
+    <br><br>
+
+    <details>
+        <summary>Click to expand</summary>
+        This is hidden content
+    </details>
+
+    <br>
+
+    <progress value="70" max="100"></progress>
+    <br><br>
+
+    <meter value="0.6"></meter>
+
+</body>
+
+</html>
