@@ -46,14 +46,58 @@ function pickCall(id) {
 //call cut
 function hangup() {
     if (!currentCall) return;
-
     currentCall.status = "completed";
-    currentCall = null;
+    loadNextCall();
+}
 
-    document.getElementById("callerName").innerText = "None";
-    document.getElementById("callerEmotion").innerText = "-";
+function switchTeller() {
+    if (currentCall) {
+        currentCall.status = "completed";
+    }
+    loadNextCall();
+}
 
-    renderQueue();
+function loadNextCall() {
+    // Find next in priority queue
+    let nextCall = calls
+        .filter(c => c.status === "queued")
+        .sort((a, b) => b.priority_score - a.priority_score)[0];
+
+    if (nextCall) {
+        pickCall(nextCall.id);
+    } else {
+        currentCall = null;
+        document.getElementById("callerName").innerText = "None";
+        document.getElementById("callerEmotion").innerText = "-";
+        renderQueue();
+    }
+}
+
+function clearNotes() {
+    document.getElementById("notesArea").value = "";
+}
+
+function exportNotes() {
+    const notes = document.getElementById("notesArea").value;
+    if (!notes.trim()) {
+        alert("Notes are empty!");
+        return;
+    }
+
+    let filename = `emergency_notes_${new Date().getTime()}`;
+    if (currentCall) {
+        filename = `${currentCall.id}_${currentCall.caller_name}`;
+    }
+
+    const blob = new Blob([notes], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${filename}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
 
 function init() {
