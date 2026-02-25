@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: grey;
+}
+
+/* header */
+.header {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* layout */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* queue */
+.queue {
+    width: 40%;
+    background: lightgrey;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.queue-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.queue-item:hover {
+    background: #f1f5f9;
+}
+
+/* emotion colors */
+.distress {
+    color: red;
+    font-weight: bold;
+}
+
+.panic {
+    color: #ff6b00;
+    font-weight: bold;
+}
+
+.neutral {
+    color: green;
+}
+
+/* right panel */
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* call card */
+.call-card {
+    background: lightgrey;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8
+}
+
+/* notes */
+.notes {
+    background: #eeeeee;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    resize: vertical;
+}

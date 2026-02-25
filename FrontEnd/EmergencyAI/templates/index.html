@@ -3,42 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency AI | Dashboard</title>
-    <link rel="stylesheet" href="static/style.css">
+    <title>Emergence AI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="header">Emergency AI</div>
-    
+
     <div class="container">
 
-        <!--queue-->
+        <!-- queue tab -->
         <div class="queue">
-            <p3>Priority Queue</p3>
-            <div id="queuelist"></div>
+            <h3>Priority Queue</h3>
+            <div id="queueList"></div>
         </div>
 
-        <!--right panel-->
+        <!-- right panel -->
         <div class="right">
 
-            <!--ongoing call-->
+            <!-- ongoing call -->
             <div class="call-card">
                 <h3>Ongoing Call</h3>
-                <p><b>Name : </b> <span id="callerName">None</span></p>
-                <p><b>Caller emotion :</b> <span id="callerEmotion">-</span></p>
-                <button onclick="hangup()">Hang up</button>
+                <p><b>Name:</b> <span id="callerName">None</span></p>
+                <p><b>Emotion:</b> <span id="callerEmotion">-</span></p>
+                <button onclick="hangup()">Hang Up</button>
             </div>
 
+            <!-- notes -->
             <div class="notes">
                 <h3>Notes</h3>
-                <textarea id="notesArea" placeholder="Type notes here..."></textarea>
+                <textarea placeholder="Write notes here..."></textarea>
             </div>
 
         </div>
-
     </div>
 
-    <script src="static/script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
