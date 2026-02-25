@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency AI | Dashboard</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="header">Emergency AI</div>
+    
+    <div class="container">
+
+        <!--queue-->
+        <div class="queue">
+            <p3>Priority Queue</p3>
+            <div id="queuelist"></div>
+        </div>
+
+        <!--right panel-->
+        <div class="right">
+
+            <!--ongoing call-->
+            <div class="call-card">
+                <h3>Ongoing Call</h3>
+                <p><b>Name : </b> <span id="callerName">None</span></p>
+                <p><b>Caller emotion :</b> <span id="callerEmotion">-</span></p>
+                <button onclick="hangup()">Hang up</button>
+            </div>
+
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea id="notesArea" placeholder="Type notes here..."></textarea>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
