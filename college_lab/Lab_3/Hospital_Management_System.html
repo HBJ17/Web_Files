@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hospital</h1>
+        <p>Your Health, Our Priority</p>
+
+        <nav>
+            <a href="#appointments">Appointments</a> |
+            <a href="#doctors">Doctors</a> |
+            <a href="#services">Services</a> |
+            <a href="#departments">Departments</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <section id="appointments">
+            <h2>Patient Appointment Registration</h2>
+            <form>
+                <label>Full Name:</label>
+                <input type="text" required>
+                <br><br>
+
+                <label>Age:</label>
+                <input type="number" min="1" max="120" required>
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+                <br><br>
+
+                <label>Contact Number:</label>
+                <input type="tel" placeholder="10-digit number" required>
+                <br><br>
+
+                <label>Select Doctor:</label>
+                <select required>
+                    <option value="">--Select Doctor--</option>
+                    <option>Doctor 1 (Cardiology)</option>
+                    <option>Doctor 2 (Neurology)</option>
+                    <option>Doctor 3 (Orthopedics)</option>
+                    <option>Doctor 4 (Pediatrics)</option>
+                </select>
+                <br><br>
+
+                <label>Preferred Date:</label>
+                <input type="date" required>
+                <br><br>
+
+                <label>Preferred Time:</label>
+                <input type="time" required>
+                <br><br>
+
+                <button type="submit">Book Appointment</button>
+                <button type="reset">Reset</button>
+            </form>
+            <hr>
+        </section>
+
+        <section id="doctors">
+            <h2>Doctor Weekly Schedule</h2>
+
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Specialization</th>
+                    <th>Available Days</th>
+                    <th>Consultation Time</th>
+                </tr>
+
+                <tr>
+                    <td>Doctor 1</td>
+                    <td>Cardiology</td>
+                    <td>Mon, Wed, Fri</td>
+                    <td>9:00 AM - 1:00 PM</td>
+                </tr>
+
+                <tr>
+                    <td>Doctor 2</td>
+                    <td>Neurology</td>
+                    <td>Tue, Thu</td>
+                    <td>10:00 AM - 2:00 PM</td>
+                </tr>
+
+                <tr>
+                    <td>Doctor 3</td>
+                    <td>Orthopedics</td>
+                    <td>Mon - Sat</td>
+                    <td>11:00 AM - 4:00 PM</td>
+                </tr>
+
+                <tr>
+                    <td>Doctor 4</td>
+                    <td>Pediatrics</td>
+                    <td>Mon - Fri</td>
+                    <td>8:00 AM - 12:00 PM</td>
+                </tr>
+            </table>
+            <hr>
+        </section>
+
+        <section id="services">
+            <h2>Hospital Services</h2>
+
+            <ul>
+                <li>24/7 Emergency Care</li>
+                <li>Radiology and Imaging</li>
+                <li>Pediatrics</li>
+                <li>Orthopedic Surgery</li>
+                <li>Cardiac Care</li>
+                <li>Neurology Department</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Health Awareness Video - Preventive Care Tips</h2>
+
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/Bk0u5YqJf1Y"
+                title="Preventive Care Tips"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+            <hr>
+        </section>
+
+        <section id="departments">
+            <h2>Hospital Departments</h2>
+
+            <section>
+                <article>
+                    <h3>Cardiology Department</h3>
+                    <p>Specialized in diagnosing and treating heart-related conditions.</p>
+                    <p>Contact: cardio@citycare.com | 111-222-3333</p>
+                    <p>Available Doctors:</p>
+                    <ul>
+                        <li>Doctor 1</li>
+                        <li>Doctor 5</li>
+                    </ul>
+                </article>
+                <hr>
+
+                <article>
+                    <h3>Neurology Department</h3>
+                    <p>Expert care for brain and nervous system disorders.</p>
+                    <p>Contact: neuro@citycare.com | 222-333-4444</p>
+                    <p>Available Doctors:</p>
+                    <ul>
+                        <li>Doctor 2</li>
+                        <li>Doctor 6</li>
+                    </ul>
+                </article>
+                <hr>
+
+                <article>
+                    <h3>Orthopedics Department</h3>
+                    <p>Treatment for bone, joint, and muscle conditions.</p>
+                    <p>Contact: ortho@citycare.com | 333-444-5555</p>
+                    <p>Available Doctors:</p>
+                    <ul>
+                        <li>Doctor 3</li>
+                        <li>Doctor 7</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <aside>
+            <hr>
+            <h3>Health Tips and Resources</h3>
+            <ul>
+                <li>Drink at least 8 glasses of water daily.</li>
+                <li>Exercise 30 minutes every day.</li>
+                <li>Maintain a balanced diet.</li>
+                <li>Schedule regular health checkups.</li>
+            </ul>
+            <hr>
+        </aside>
+
+    </main>
+
+    <footer id="contact">
+        <h3>Contact Information</h3>
+        <p>Email: support@citycare.com</p>
+        <p>Phone: 999-888-7777</p>
+        <p>Emergency Helpline: 108</p>
+        <p>&copy; 2026 CityCare Hospital. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
