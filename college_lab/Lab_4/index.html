@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #blog p {
+            color: gray;
+        }
+
+        .author {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#profile">Profile</a>
+    <a href="#todo">To-Do</a>
+    <a href="#buttons">Buttons</a>
+    <a href="registration.html">Registration</a>
+</nav>
+
+
+<section id="home">
+    <h1>Welcome to Our Company</h1>
+</section>
+
+<section id="blog">
+    <h2 style="color: darkblue;">My Blog Title</h2> 
+
+    <p>This is a sample blog paragraph.</p>
+
+    <p class="author">By John Doe</p>
+
+    <img src="author.jpg" width="100">
+
+    <br><br>
+    <button class="read-btn">Read More</button>
+</section>
+
+
+<section id="products">
+    <h2>Product 1</h2>
+    <p>Nice product</p>
+
+    <h2 class="highlight">Product 2 (Discount)</h2>
+    <p>Cheap product</p>
+
+    <div id="featured-product">
+        <h2>Featured Product</h2>
+        <p>Best product</p>
+    </div>
+</section>
+
+
+<section id="profile">
+    <div class="profile-card">
+        <img src="profile.jpg" alt="profile picture" width="100">
+        <h3>John Doe</h3>
+        <p>Web Developer</p>
+    </div>
+</section>
+
+
+<section id="contact">
+    <form>
+        <input type="text" placeholder="Your Name"><br><br>
+        <input type="email" placeholder="Your Email"><br><br>
+        <input type="text" placeholder="Your Message"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section id="todo">
+    <ul>
+        <li>Task 1</li>
+        <li class="completed">Task 2</li>
+        <li>Task 3</li>
+    </ul>
+</section>
+
+<section id="buttons">
+    <button class="btn">Submit</button>
+    <button class="btn">Cancel</button>
+    <button class="btn" id="download-btn">Download</button>
+</section>
+
+</body>
+</html>
