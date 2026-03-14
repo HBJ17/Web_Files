@@ -1,0 +1,114 @@
+* {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:0;
+}
+
+/* header */
+
+header{
+    text-align:center;
+    padding:20px;
+    background:#ff7043;
+    color:white;
+}
+
+nav a{
+    margin:10px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover {
+   color:yellow;
+}
+
+/* hero */
+
+.hero{
+    background:white;
+    margin:30px;
+    padding:30px;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+/* cards inside hero */
+
+.card{
+    width:80%;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    background:#fafafa;
+    transition:0.3s ;
+}
+
+.card:hover {
+    transform:scale(1.01);
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* dishes vertical */
+
+.dish{
+    border:1px solid #ddd;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:10px;
+    background:#fafafa;
+    transition:0.3s ;
+}
+
+.dish:hover {
+   transform:scale(1.1);
+}
+
+/* dish image */
+
+.dish img{
+    width:150px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* price */
+
+.price span{
+    color:#ff5722;
+    font-weight:bold;
+}
+
+/* button */
+
+.dish a{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 12px;
+    background:#ff7043;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* footer */
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#333;
+    color:white;
+}
