@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">EventHub</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Attendees</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <div class="container-fluid bg-light text-center py-5">
+        <h1 class="display-4 fw-bold">Welcome to EventHub</h1>
+        <p class="lead">Discover and join amazing events</p>
+        <button class="btn btn-primary">Explore Events</button>
+    </div>
+
+    <!-- 3. EVENT CATEGORIES -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Categories</h2>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Music</h5>
+                        <p>Concerts and live shows</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Sports</h5>
+                        <p>Games and tournaments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. UPCOMING EVENTS -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Upcoming Events</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Music Fest</h5>
+                        <p>Enjoy live music</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width:80%">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. REGISTRATION FORM -->
+    <div class="container my-5">
+        <h2>Register</h2>
+        <form class="was-validated">
+            <input type="text" class="form-control mb-2" placeholder="Name" required>
+            <input type="email" class="form-control mb-2" placeholder="Email" required>
+            <select class="form-select mb-2">
+                <option>Music</option>
+                <option>Sports</option>
+            </select>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" required>
+                <label class="form-check-label">Agree to terms</label>
+            </div>
+
+            <button class="btn btn-success mt-3">Submit</button>
+        </form>
+    </div>
+
+    <!-- 6. ATTENDEES TABLE -->
+    <div class="container my-5">
+        <h2>Attendees</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Ticket</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>john@mail.com</td>
+                    <td>VIP</td>
+                    <td>Confirmed</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 7. GOALS TRACKER -->
+    <div class="container my-5">
+        <h2>Event Goals</h2>
+        <label>Tickets Sold</label>
+        <div class="progress mb-2">
+            <div class="progress-bar bg-success" style="width:70%">70%</div>
+        </div>
+    </div>
+
+    <!-- 8. COMMENTS -->
+    <div class="container my-5">
+        <h2>Comments</h2>
+        <div class="card p-3 mb-3">
+            <h6>User1</h6>
+            <p>Great event!</p>
+        </div>
+    </div>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Contact: eventhub@mail.com</p>
+    </footer>
+
+    <!-- 10. CAROUSEL -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/800x300" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Featured Event</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
